@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Undangan Pernikahan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f1e4;--card:#fffaf0;--sage:#8a9a7b;--sage-d:#5f7152;--gold:#b8924a;--ink:#3b4234;--mute:#7b816f;--line:#d9d2bd;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -91,12 +91,53 @@ div.tl{position:relative;text-align:left;padding:0 0 26px 26px;border-left:1px s
 @keyframes spin{to{rotate:360deg}}
 footer{padding:40px 24px 70px;text-align:center;color:var(--mute);font-size:13px}
 @media (prefers-reduced-motion:reduce){.rv,.petal,.fall{animation:none;transition:none;opacity:1;transform:none}}
+
+/* ===== v5: gaya mengikuti desain undangan fisik ===== */
+:root{--bg:#f3ecd9;--card:#fbf6e8;--sage:#7f8d66;--sage-d:#3f5034;--gold:#b08d4a;--ink:#2f3a2b;--mute:#6b7260;--line:#d9cfb1}
+body{background-color:var(--bg);background-image:radial-gradient(circle at 10% 0,rgba(127,141,102,.18),transparent 42%),radial-gradient(circle at 100% 60%,rgba(176,141,74,.12),transparent 45%)}
+section{padding:112px 28px}
+h2{font-size:25px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+#hero h1{font-size:40px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;line-height:1.25}
+.ar{font:400 32px/1.6 Amiri,"Times New Roman",serif;color:var(--sage-d);margin:0 0 2px}
+.card,.who{border:1px solid var(--gold);background:var(--card)}
+.orn{width:140px;height:140px;opacity:1;overflow:visible}
+symbol{overflow:visible}
+.fdiv{max-width:240px}
+#cover{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cg fill='none' stroke='rgba(214,184,110,.3)' stroke-width='.7'%3E%3Cpath d='M24 6l5 13 13 5-13 5-5 13-5-13-13-5 13-5z'/%3E%3Ccircle cx='24' cy='24' r='3'/%3E%3Cpath d='M0 0l6 6M48 0l-6 6M0 48l6-6M48 48l-6-6'/%3E%3C/g%3E%3C/svg%3E"),radial-gradient(circle at 50% 28%,#718060 0,#566548 62%,#46553a 100%);color:#2f3d2b}
+#cover::after{border-color:rgba(214,184,110,.75)}
+#cover>.gate{position:absolute;z-index:auto;inset:0;margin:auto;width:min(88vw,400px);height:min(86vh,720px)}
+.gsv{position:absolute;inset:0;width:100%;height:100%;z-index:0;filter:drop-shadow(0 10px 24px rgba(0,0,0,.28))}
+.g1{fill:url(#cg);stroke:#b08d4a;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.g2{fill:none;stroke:#b08d4a;stroke-width:.9;vector-effect:non-scaling-stroke}
+.gin{position:absolute;inset:0;z-index:2;padding:24% 10% 9%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.petal{width:min(200px,26vh);height:min(200px,26vh);z-index:1;overflow:visible}
+.petal.b,.petal.d{width:min(150px,19vh);height:min(150px,19vh)}
+.qf1{width:24px;height:24px;margin-bottom:8px}
+#cover .sub{color:#b08d4a;font-size:11px;letter-spacing:.3em}
+#cover h1{font-size:min(34px,5vh);font-weight:500;letter-spacing:.16em;text-transform:uppercase;line-height:1.25;color:#35462f;margin:8px 0}
+#cover .amp{font-size:.62em;letter-spacing:0;color:#b08d4a;text-transform:none}
+.gline{display:flex;align-items:center;gap:8px;width:150px;margin:6px 0 8px}.gline i{flex:1;height:1px;background:linear-gradient(90deg,transparent,#b08d4a)}.gline i:last-child{transform:scaleX(-1)}.gline svg{width:16px;height:16px}
+#cvD{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#4b5740}
+#cover .guest{margin:min(20px,3vh) 0 min(16px,2.4vh);font-size:13px;color:#4b5740}
+#cover .guest b{font-size:20px;color:#2f3d2b}
+#cover .btn{background:#3f5034;color:#f6efdc;border:1px solid #b08d4a;box-shadow:0 6px 16px rgba(47,61,43,.35);letter-spacing:.14em;text-transform:uppercase;font-size:12.5px}
 </style>
 </head>
 <body class="lock">
 <svg width="0" height="0" style="position:absolute"><defs>
-<symbol id="fw" viewBox="-20 -20 40 40"><g fill="#fffdf6" stroke="#b8924a" stroke-width=".7"><ellipse cy="-9" rx="5.5" ry="9.5"/><ellipse cy="-9" rx="5.5" ry="9.5" transform="rotate(72)"/><ellipse cy="-9" rx="5.5" ry="9.5" transform="rotate(144)"/><ellipse cy="-9" rx="5.5" ry="9.5" transform="rotate(216)"/><ellipse cy="-9" rx="5.5" ry="9.5" transform="rotate(288)"/></g><circle r="3" fill="#d4ae66"/></symbol>
-<symbol id="fl" viewBox="0 0 120 120"><path d="M-2 10C45 8 95 40 118 100" fill="none" stroke="#8a9a7b" stroke-width="1.6"/><path d="M-2 30C30 32 60 55 70 100" fill="none" stroke="#a9b99a" stroke-width="1.2"/><g fill="#9fb08f"><ellipse cx="30" cy="14" rx="4" ry="12" transform="rotate(-70 30 14)"/><ellipse cx="55" cy="28" rx="4" ry="12" transform="rotate(-55 55 28)"/><ellipse cx="80" cy="50" rx="4" ry="12" transform="rotate(-35 80 50)"/><ellipse cx="100" cy="76" rx="4" ry="12" transform="rotate(-20 100 76)"/><ellipse cx="22" cy="44" rx="3.5" ry="10" transform="rotate(-60 22 44)"/><ellipse cx="45" cy="62" rx="3.5" ry="10" transform="rotate(-40 45 62)"/></g><use href="#fw" x="6" y="-2" width="42" height="42"/><use href="#fw" x="46" y="26" width="36" height="36"/><use href="#fw" x="82" y="64" width="30" height="30"/><circle cx="64" cy="14" r="3" fill="#d4ae66"/><circle cx="96" cy="48" r="2.5" fill="#d4ae66"/></symbol>
+<linearGradient id="lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a3ae82"/><stop offset="1" stop-color="#5d6d46"/></linearGradient>
+<radialGradient id="pg" cx=".5" cy=".95" r=".95"><stop offset="0" stop-color="#e4e3b8"/><stop offset=".45" stop-color="#fffdf4"/><stop offset="1" stop-color="#fffefb"/></radialGradient>
+<linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf6e8"/><stop offset="1" stop-color="#eee5cb"/></linearGradient>
+<g id="lf"><path d="M0 0C9 -12 9 -32 0 -46C-9 -32 -9 -12 0 0Z" fill="url(#lg)"/><path d="M0 -2V-42M0 -14L-4.5 -22M0 -14L4.5 -22M0 -26L-4 -32M0 -26L4 -32" stroke="#e6ead0" stroke-opacity=".55" stroke-width=".6" fill="none"/></g>
+<g id="pt"><path d="M0 0C-7 -5 -8 -14 0 -20C8 -14 7 -5 0 0Z" fill="url(#pg)" stroke="#d3c9a8" stroke-width=".45"/></g>
+<g id="fwg"><use href="#pt" transform="rotate(30) scale(.9)"/><use href="#pt" transform="rotate(90) scale(.9)"/><use href="#pt" transform="rotate(150) scale(.9)"/><use href="#pt" transform="rotate(210) scale(.9)"/><use href="#pt" transform="rotate(270) scale(.9)"/><use href="#pt" transform="rotate(330) scale(.9)"/><use href="#pt"/><use href="#pt" transform="rotate(60)"/><use href="#pt" transform="rotate(120)"/><use href="#pt" transform="rotate(180)"/><use href="#pt" transform="rotate(240)"/><use href="#pt" transform="rotate(300)"/><circle r="3.4" fill="#d9d487"/><g fill="#a98c3f"><circle cx="2.6" r=".8"/><circle cx="1.3" cy="2.2" r=".8"/><circle cx="-1.3" cy="2.2" r=".8"/><circle cx="-2.6" r=".8"/><circle cx="-1.3" cy="-2.2" r=".8"/><circle cx="1.3" cy="-2.2" r=".8"/></g></g>
+<symbol id="qf" viewBox="-11 -11 22 22"><g fill="none" stroke="#b08d4a" stroke-width=".9"><path d="M0 -8.5C1.6 -3.4 3.4 -1.6 8.5 0 3.4 1.6 1.6 3.4 0 8.5-1.6 3.4-3.4 1.6-8.5 0-3.4-1.6-1.6-3.4 0-8.5Z"/><circle r="2"/><path d="M0 -8.5V-10.5M0 8.5V10.5M-8.5 0H-10.5M8.5 0H10.5"/></g></symbol>
+<symbol id="fl" viewBox="-12 -12 190 190"><path d="M-4 8C50 6 120 50 152 152" fill="none" stroke="#6b7b53" stroke-width="1.8"/><path d="M-4 62C30 66 58 100 66 152" fill="none" stroke="#7b8a62" stroke-width="1.3"/>
+<use href="#lf" transform="translate(24 11) rotate(49) scale(.8)"/><use href="#lf" transform="translate(39 15) rotate(60) scale(.85)"/><use href="#lf" transform="translate(60 26) rotate(70) scale(.85)"/><use href="#lf" transform="translate(82 41) rotate(80) scale(.85)"/><use href="#lf" transform="translate(100 58) rotate(86) scale(.8)"/><use href="#lf" transform="translate(122 86) rotate(97) scale(.78)"/><use href="#lf" transform="translate(141 123) rotate(107) scale(.72)"/>
+<use href="#lf" transform="translate(24 11) rotate(149) scale(.8)"/><use href="#lf" transform="translate(39 15) rotate(160) scale(.85)"/><use href="#lf" transform="translate(60 26) rotate(170) scale(.85)"/><use href="#lf" transform="translate(82 41) rotate(180) scale(.85)"/><use href="#lf" transform="translate(100 58) rotate(186) scale(.8)"/><use href="#lf" transform="translate(122 86) rotate(197) scale(.78)"/><use href="#lf" transform="translate(141 123) rotate(207) scale(.72)"/>
+<use href="#lf" transform="translate(8 64) rotate(55) scale(.7)"/><use href="#lf" transform="translate(20 70) rotate(71) scale(.7)"/><use href="#lf" transform="translate(41 89) rotate(92) scale(.68)"/><use href="#lf" transform="translate(56 117) rotate(108) scale(.64)"/><use href="#lf" transform="translate(8 64) rotate(155) scale(.7)"/><use href="#lf" transform="translate(20 70) rotate(171) scale(.7)"/><use href="#lf" transform="translate(41 89) rotate(192) scale(.68)"/><use href="#lf" transform="translate(56 117) rotate(208) scale(.64)"/>
+<use href="#fwg" transform="translate(46 26) rotate(-12) scale(1.15)"/><use href="#fwg" transform="translate(94 54) rotate(18) scale(1)"/><use href="#fwg" transform="translate(127 96) rotate(-5) scale(.8)"/><use href="#fwg" transform="translate(26 72) rotate(30) scale(.6)"/>
+<circle cx="68" cy="12" r="2.6" fill="#f6f0dc" stroke="#cfc6a6" stroke-width=".4"/><circle cx="110" cy="42" r="2.4" fill="#f6f0dc" stroke="#cfc6a6" stroke-width=".4"/><circle cx="140" cy="76" r="2.2" fill="#f6f0dc" stroke="#cfc6a6" stroke-width=".4"/></symbol>
 </defs></svg>
 
 <!-- ===== PENGATURAN: edit di sini saja ===== -->
@@ -104,11 +145,15 @@ footer{padding:40px 24px 70px;text-align:center;color:var(--mute);font-size:13px
 const CFG={
   pria:"Fadli", priaLengkap:"Muhammad Nur Fadli, S.Ap", priaOrtu:"Putra dari Bapak Parno & Ibu Ai Nurjanah",
   wanita:"Qonita", wanitaLengkap:"Qonita Nafsah Muthmainnah, S.Tr.Bns", wanitaOrtu:"Putri dari Bapak Wawan Ruswandi & Ibu Enung Nurjamillah",
-  foto:"",                       // foto berdua (opsional), contoh: "foto.jpg"
-  cerita:[],                    // opsional, contoh: [{j:"2023",t:"Pertama Bertemu",d:"Ceritanya…"}]
-  catatan:["Mohon hadir tepat waktu, akad dimulai pukul 08.00 WIB.","Mohon berpakaian rapi dan sopan.","Setelah akad, kami menyediakan hidangan sederhana sebagai bentuk syukur kepada Allah dan ungkapan terima kasih atas doa serta kehadiran Anda."],
+  cerita:[
+    {j:"Awal Cerita",t:"Sebuah Pertanyaan Sederhana",d:"Semuanya bermula dari pertanyaan sederhana. Fadli bertanya kepada seorang teman apakah ada yang bisa dikenalkan kepadanya, dan dari situlah nama Qonita muncul."},
+    {j:"8 Juli 2025",t:"Percakapan Pertama",d:"Kami memulai percakapan untuk pertama kalinya, dan sejak awal merasa nyaman untuk saling mengenal. Ketika Qonita bertanya tentang tujuan perkenalan ini, Fadli menyampaikan satu niat: serius menuju pernikahan."},
+    {j:"Saling Mengenal",t:"Tanpa Pacaran",d:"Kami memilih saling mengenal tanpa pacaran. Kesabaran, pengertian, doa, dan dukungan satu sama lain membawa kami semakin yakin, hingga akhirnya melibatkan keluarga."},
+    {j:"26 Desember 2026",t:"Menuju Pernikahan",d:"InsyaAllah kami melanjutkan kisah ini dalam ikatan pernikahan."}
+  ],
+  catatan:["Mohon hadir tepat waktu, akad dimulai pukul 08.00 WIB.","Mohon berpakaian rapi dan sopan.","Setelah akad, kami menyediakan hidangan sederhana sebagai bentuk syukur kepada Allah dan ungkapan terima kasih atas doa serta kehadiran Anda.","Acara berakhir pukul 10.30 WIB, mengingat lokasi perlu dikosongkan sebelum pukul 11.00 WIB. Terima kasih atas pengertian Bapak/Ibu/Saudara/i."],
   tanggal:"2026-12-26T08:00:00+07:00",
-  tanggalText:"Sabtu, 26 Desember 2026", jam:"Akad Nikah · 08.00 WIB",
+  tanggalText:"Sabtu, 26 Desember 2026", jam:"Akad Nikah · 08.00 – 10.30 WIB",
   tempat:"Masjid Raya Al Azhar Podomoro Park",
   maps:"https://www.google.com/maps/search/?api=1&query=Masjid+Raya+Al+Azhar+Podomoro+Park",
   youtubeId:"LvR4ioAB4Bk",      // lagu dari YouTube
@@ -116,27 +161,31 @@ const CFG={
   mp3:"",                        // opsional: isi "musik.mp3" kalau mau pakai file sendiri (menggantikan YouTube)
   rsvpUrl:"https://script.google.com/macros/s/AKfycbwk2JFOwpXi03oXQL7MGERdhR3QCwl2I7yZ6zWn12wCVbl0EtgL0UdsWqHEyL5wunFikQ/exec",
   waAdmin:"",                    // opsional: nomor WA, contoh 6281234567890
-  gallery:[],                    // contoh: ["foto1.jpg","foto2.jpg"]
-  gifts:[]                       // contoh: [{bank:"BCA",no:"1234567890",an:"Nama"}]
 };
 </script>
 
 <div id="cover">
-  <svg class="petal a"><use href="#fl"/></svg><svg class="petal c"><use href="#fl"/></svg>
-  <svg class="petal b"><use href="#fl"/></svg><svg class="petal d"><use href="#fl"/></svg>
-  <div class="sub gold">The Wedding Of</div>
-  <h1 id="cvN"></h1>
-  <div id="cvD" style="font-size:15px;letter-spacing:.12em"></div>
-  <div class="guest">Kepada Yth. Bapak/Ibu/Saudara/i<b id="guest">Tamu Undangan</b></div>
-  <button class="btn" id="open">Buka Undangan</button>
+  <div class="gate">
+    <svg class="gsv" viewBox="0 0 300 520" preserveAspectRatio="none"><path class="g1" d="M2 518V196C2 140 36 112 66 84C98 54 128 38 150 4C172 38 202 54 234 84C264 112 298 140 298 196V518Z"/><path class="g2" transform="translate(150 261) scale(.93 .955) translate(-150 -261)" d="M2 518V196C2 140 36 112 66 84C98 54 128 38 150 4C172 38 202 54 234 84C264 112 298 140 298 196V518Z"/></svg>
+    <div class="gin">
+      <svg class="qf1"><use href="#qf"/></svg>
+      <div class="sub">The Wedding Of</div>
+      <h1 id="cvN"></h1>
+      <div class="gline"><i></i><svg><use href="#qf"/></svg><i></i></div>
+      <div id="cvD"></div>
+      <div class="guest">Kepada Yth. Bapak/Ibu/Saudara/i<b id="guest">Tamu Undangan</b></div>
+      <button class="btn" id="open">Buka Undangan</button>
+    </div>
+  </div>
+  <svg class="petal a"><use href="#fl"/></svg><svg class="petal c"><use href="#fl"/></svg><svg class="petal d"><use href="#fl"/></svg><svg class="petal b"><use href="#fl"/></svg>
 </div>
 
 <button id="mus" aria-label="Musik">♪</button>
 <div id="yt"></div>
 
 <section id="hero">
-  <p class="rv" style="font:italic 400 20px 'Cormorant Garamond',serif;color:var(--gold);margin:0 0 18px">Bismillahirrahmanirrahim</p>
-  <div id="foto" class="rv"></div>
+  <p class="rv ar">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+  <p class="rv" style="font:italic 400 15px 'Cormorant Garamond',serif;color:var(--gold);margin:0 0 18px">Bismillahirrahmanirrahim</p>
   <div class="sub rv">The Wedding Of</div>
   <h1 class="rv" id="hN"></h1>
   <div class="divider rv"></div>
@@ -154,6 +203,13 @@ const CFG={
   <div class="who rv r"><div class="sub">Mempelai Wanita</div><h3 id="wL"></h3><p id="wO"></p></div>
 </section>
 
+<section id="ctS" style="display:none">
+  <div class="sub rv">Our Story</div>
+  <h2 class="rv">Kisah Kami</h2>
+  <div id="ct" style="margin-top:26px"></div>
+  <p class="ayat rv" style="margin-top:14px">“Sebuah perkenalan sederhana, yang Allah arahkan menuju sebuah perjalanan seumur hidup.” 🤍</p>
+</section>
+
 <section>
   <div class="sub rv">Save The Date</div>
   <h2 class="rv">Akad Nikah</h2>
@@ -164,13 +220,6 @@ const CFG={
     <a class="btn o" id="aM" target="_blank" rel="noopener">Buka Peta</a> <a class="btn o" id="aC" target="_blank" rel="noopener">Simpan ke Kalender</a>
     <ul class="cat" id="cat"></ul>
   </div>
-</section>
-
-<section id="ctS" style="display:none"><div class="sub rv">Our Story</div><h2 class="rv">Cerita Kami</h2><div id="ct" style="margin-top:26px"></div></section>
-
-<section id="galS" style="display:none">
-  <h2 class="rv">Momen Kami</h2>
-  <div class="gal" id="gal"></div>
 </section>
 
 <section id="rsvp">
@@ -186,7 +235,7 @@ const CFG={
         <label><input type="radio" name="h" value="Tidak Hadir"><span>Tidak Hadir</span></label>
       </div>
       <div id="jmlW"><label>Jumlah orang yang hadir</label>
-        <select id="fj"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+        <select id="fj"><option>1</option><option>2</option></select></div>
       <label>Ucapan &amp; doa (opsional)</label><textarea id="fu" placeholder="Tulis ucapan untuk kami"></textarea>
       <div style="margin-top:20px"><button class="btn" id="send" type="button">Kirim Konfirmasi</button></div>
       <div id="msg"></div>
@@ -194,12 +243,6 @@ const CFG={
   </div>
   <h2 class="rv" style="margin-top:48px">Ucapan &amp; Doa</h2>
   <div id="wl"></div>
-</section>
-
-<section id="giftS" style="display:none">
-  <h2 class="rv">Hadiah</h2>
-  <p class="rv" style="color:var(--mute);font-size:14px">Kehadiran Anda adalah hadiah terbaik. Bila ingin berbagi tanda kasih, dapat melalui:</p>
-  <div id="gifts"></div>
 </section>
 
 <section>
@@ -228,13 +271,12 @@ $("#cvD").textContent=CFG.tanggalText; $("#hD").textContent=CFG.tanggalText;
 document.title="Undangan Pernikahan "+nm;
 $("#pL").textContent=CFG.priaLengkap;$("#pO").textContent=CFG.priaOrtu;
 $("#wL").textContent=CFG.wanitaLengkap;$("#wO").textContent=CFG.wanitaOrtu;
-if(CFG.foto){$("#foto").innerHTML='<img src="'+CFG.foto+'" alt="">';$("#foto").style.display="block"}
 if(CFG.cerita.length){$("#ctS").style.display="";$("#ct").innerHTML=CFG.cerita.map(c=>'<div class="tl rv"><i></i><b>'+c.j+'</b><h3>'+c.t+'</h3><p>'+c.d+'</p></div>').join("")}
 $("#cat").innerHTML=CFG.catatan.map(x=>"<li>"+x+"</li>").join("");
-{const s=new Date(CFG.tanggal),e=new Date(+s+72e5),f=d=>d.toISOString().replace(/[-:]|\.\d{3}/g,"");
+{const s=new Date(CFG.tanggal),e=new Date(+s+9e6),f=d=>d.toISOString().replace(/[-:]|\.\d{3}/g,"");
 $("#aC").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Akad Nikah "+nm)+"&dates="+f(s)+"/"+f(e)+"&location="+encodeURIComponent(CFG.tempat)}
 document.querySelectorAll("section").forEach(s=>s.insertAdjacentHTML("afterbegin",'<svg class="orn tl"><use href="#fl"/></svg><svg class="orn br"><use href="#fl"/></svg>'));
-document.querySelectorAll("section + section").forEach(s=>s.insertAdjacentHTML("beforebegin",'<div class="fdiv"><i></i><svg width="28" height="28"><use href="#fw"/></svg><i></i></div>'));
+document.querySelectorAll("section + section").forEach(s=>s.insertAdjacentHTML("beforebegin",'<div class="fdiv"><i></i><svg width="26" height="26"><use href="#qf"/></svg><i></i></div>'));
 $("#clN").textContent=nm;
 {const [y,m,d]=CFG.tanggal.slice(0,10).split("-").map(Number),f=new Date(y,m-1,1).getDay(),n=new Date(y,m,0).getDate(),B=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
 let h='<div class="kh">'+B[m-1]+' '+y+'</div><div class="kg">'+["Min","Sen","Sel","Rab","Kam","Jum","Sab"].map(x=>"<b>"+x+"</b>").join("");
@@ -242,9 +284,6 @@ for(let i=0;i<f;i++)h+="<span></span>";for(let i=1;i<=n;i++)h+='<span'+(i===d?' 
 $("#kal").innerHTML=h+"</div>"}
 $("#aT").textContent=CFG.tanggalText;$("#aJ").textContent=CFG.jam;$("#aP").textContent=CFG.tempat;$("#aM").href=CFG.maps;
 // galeri & hadiah (tampil hanya kalau diisi)
-if(CFG.gallery.length){$("#galS").style.display="";$("#gal").innerHTML=CFG.gallery.map(u=>'<img class="rv" loading="lazy" src="'+u+'" alt="">').join("")}
-if(CFG.gifts.length){$("#giftS").style.display="";$("#gifts").innerHTML=CFG.gifts.map((x,i)=>'<div class="card rv"><b>'+x.bank+'</b><div class="acc">'+x.no+'</div><div style="color:var(--mute);font-size:14px">a.n. '+x.an+'</div><br><button class="btn o" data-c="'+x.no+'">Salin Nomor</button></div>').join("");
-  document.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(b.dataset.c);b.textContent="Tersalin ✓"})}
 // countdown
 const T=new Date(CFG.tanggal).getTime();
 function tick(){let d=Math.max(0,T-Date.now());const v=[[864e5,"Hari"],[36e5,"Jam"],[6e4,"Menit"],[1e3,"Detik"]];
